@@ -38,6 +38,11 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   # gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry'
+  gem 'rspec-rails'
+  gem 'capybara' # use rspec to interact with web pages way user would
+  gem 'launchy' # save_and_open_page (launch an html page for what capybara sees)
+  gem 'simplecov'
+  gem 'shoulda-matchers', '~> 4.0'
 end
 
 group :development do
